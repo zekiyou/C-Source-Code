@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 extern int c;
-//extern ¹Ø¼ü×ÖĞŞÊÎ±äÁ¿±íÃ÷±äÁ¿cÔÚÆäËûµØ·½¶¨Òå
+//extern å…³é”®å­—ä¿®é¥°å˜é‡è¡¨æ˜å˜é‡cåœ¨å…¶ä»–åœ°æ–¹å®šä¹‰
 extern int b;
 extern int getI();
-//extern ¹Ø¼ü×ÖĞŞÊÎº¯Êı±íÃ÷º¯ÊıÔÚÆäËûµØ·½¶¨Òå
+//extern å…³é”®å­—ä¿®é¥°å‡½æ•°è¡¨æ˜å‡½æ•°åœ¨å…¶ä»–åœ°æ–¹å®šä¹‰
 extern int GetI();
 int main()
 {
     printf("%d",c);
     printf("%d",b);
-    //bÈ«¾Ö±äÁ¿±»staticĞŞÊÎ£¬Ê¹µÃÈ«¾Ö±äÁ¿bÖ»ÔÚÉùÃ÷µÄtest.cÆğ×÷ÓÃ error
+    //bå…¨å±€å˜é‡è¢«staticä¿®é¥°ï¼Œä½¿å¾—å…¨å±€å˜é‡båªåœ¨å£°æ˜çš„test.cèµ·ä½œç”¨ error
 
     printf("%d",getI());
-    //getIº¯Êı±»staticĞŞÊÎ£¬Ê¹µÃgetI()Ö»ÔÚÉùÃ÷µÄtest.cÆğ×÷ÓÃ error
+    //getIå‡½æ•°è¢«staticä¿®é¥°ï¼Œä½¿å¾—getI()åªåœ¨å£°æ˜çš„test.cèµ·ä½œç”¨ error
     printf("%d",GetI());
 
 
