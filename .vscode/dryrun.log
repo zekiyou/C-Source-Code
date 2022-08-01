@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/zeki/code/C-Source-Code'
+make: Leaving directory `/Users/zeki/code/C-Source-Code'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

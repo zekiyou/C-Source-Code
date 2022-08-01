@@ -7,23 +7,23 @@ int main()
     short s=-1;
     int i=7;
 
-    sign=(c & 0x80);        //cÓë1000 0000 °´Î»Óë ÈôÎª0 ÔòcµÄ×î¸ßÎ»Îª0 Èô²»Îª0 ÔòcµÄ×î¸ßÎ»Îª1
+    sign=(c & 0x80);        //cä¸1000 0000 æŒ‰ä½ä¸ è‹¥ä¸º0 åˆ™cçš„æœ€é«˜ä½ä¸º0 è‹¥ä¸ä¸º0 åˆ™cçš„æœ€é«˜ä½ä¸º1
     if(sign == 0)
-        printf("c=%d×î¸ßÎ»Îª0\n",c);
+        printf("c=%dæœ€é«˜ä½ä¸º0\n",c);
     else
-        printf("c=%d×î¸ßÎ»Îª1\n",c);
+        printf("c=%dæœ€é«˜ä½ä¸º1\n",c);
 
     sign=(s & 0x8000);
     if(sign == 0)
-        printf("s=%d×î¸ßÎ»Îª0\n",s);
+        printf("s=%dæœ€é«˜ä½ä¸º0\n",s);
     else
-        printf("s=%d×î¸ßÎ»Îª1\n",s);
+        printf("s=%dæœ€é«˜ä½ä¸º1\n",s);
 
     sign=(i & 0x80000000);
     if(sign == 0)
-        printf("i=%d×î¸ßÎ»Îª0\n",i);
+        printf("i=%dæœ€é«˜ä½ä¸º0\n",i);
     else
-        printf("i=%d×î¸ßÎ»Îª1\n",i);
+        printf("i=%dæœ€é«˜ä½ä¸º1\n",i);
 
 
     return 0;
