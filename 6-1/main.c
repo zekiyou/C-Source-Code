@@ -3,16 +3,15 @@
 #define EPSINON 0.00000001
 int main()
 {
-    bool a=true;
-    int b=0;
-    float c=0.0;
-    if(a)
-        printf("boolÐÍµÄ±äÁ¿Ö±½Ó×÷ÎªifµÄÌõ¼þ\n");
-    if(0 == b)
-        printf("±äÁ¿Óë0Öµ±È½Ï 0ÖµÔÚ±È½Ï·ûºÅ×ó±ß\n");
-    if((-EPSINON <=c)&&(c<=EPSINON))
-        printf("¸¡µãÊýÓë0Öµ±È½Ï ÐèÒª¶¨Òå¾«¶È\n");
-
+    bool a = true;
+    int b = 0;
+    float c = 0.0;
+    if (a)
+        printf("boolåž‹çš„å˜é‡ç›´æŽ¥ä½œä¸ºifçš„æ¡ä»¶\n");
+    if (0 == b)
+        printf("å˜é‡ä¸Ž0å€¼æ¯”è¾ƒ 0å€¼åœ¨æ¯”è¾ƒç¬¦å·å·¦è¾¹\n");
+    if ((-EPSINON <= c) && (c <= EPSINON))
+        printf("æµ®ç‚¹æ•°ä¸Ž0å€¼æ¯”è¾ƒ éœ€è¦å®šä¹‰ç²¾åº¦\n");
 
     return 0;
 }

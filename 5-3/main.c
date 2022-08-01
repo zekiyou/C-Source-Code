@@ -8,4 +8,4 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
-// C语言main.c 调用C++ 通过extern C 让C++ tset.cpp的add函数以C方式编译 
+// C璇█main.c 璋冪敤C++ 閫氳繃extern C 璁〤++ tset.cpp鐨刟dd鍑芥暟浠鏂瑰紡缂栬瘧 

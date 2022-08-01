@@ -1,22 +1,26 @@
 #include <stdio.h>
 
-void f1(int i){
-    if(i<60)
+void f1(int i)
+{
+    if (i < 60)
         printf("Failed\n");
-    else if(60>=i && i<=80)
+    else if (60 >= i && i <= 80)
         printf("Good\n");
     else
         printf("Excellent\n");
 }
-//ifÓï¾äÊÊÓÃÓÚ·¶Î§»®·ÖÅÐ¶ÏµÄÇé¿ö
+// ifè¯­å¥é€‚ç”¨äºŽèŒƒå›´åˆ’åˆ†åˆ¤æ–­çš„æƒ…å†µ
 
-void f2(int i){
-    switch (i<60) {
+void f2(int i)
+{
+    switch (i < 60)
+    {
     case 1:
         printf("Failed\n");
         break;
     default:
-        switch (60>=i && i<=80) {
+        switch (60 >= i && i <= 80)
+        {
         case 1:
             printf("Good\n");
             break;
@@ -27,10 +31,12 @@ void f2(int i){
         break;
     }
 }
-//ifÓëswitch»¥»»
+// ifä¸Žswitchäº’æ¢
 
-void f3(char c){
-    switch (c) {
+void f3(char c)
+{
+    switch (c)
+    {
     case 'A':
         printf("Apple\n");
         break;
@@ -44,19 +50,18 @@ void f3(char c){
         printf("Unkonw\n");
         break;
     }
-
 }
-// switchÓï¾äÊÊÓÃÓÚµ¥Öµ¶à·ÖÖ¦Çé¿ö
-// caseÖµÅÅÁÐ£º 1.°´×ÖÄ¸»òÕßÊý×ÖµÄË³Ðò 2.Õý³£ÔÚÇ° Òì³£ÔÚºó 3.defalutÓÃÓÚ´¦ÀíÕæÕýµÄÒì³£
+// switchè¯­å¥é€‚ç”¨äºŽå•å€¼å¤šåˆ†æžæƒ…å†µ
+// caseå€¼æŽ’åˆ—ï¼š 1.æŒ‰å­—æ¯æˆ–è€…æ•°å­—çš„é¡ºåº 2.æ­£å¸¸åœ¨å‰ å¼‚å¸¸åœ¨åŽ 3.defalutç”¨äºŽå¤„ç†çœŸæ­£çš„å¼‚å¸¸
 
-void f4(char c){
-    if('A' == c)
+void f4(char c)
+{
+    if ('A' == c)
         printf("Apple\n");
-    else if('B' == c)
+    else if ('B' == c)
         printf("Banana\n");
-    else if('C' == c)
+    else if ('C' == c)
         printf("Cat\n");
-
 }
 
 int main()
@@ -65,5 +70,4 @@ int main()
     f2(85);
     f3('B');
     f4('C');
-
 }
