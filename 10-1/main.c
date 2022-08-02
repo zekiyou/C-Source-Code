@@ -4,14 +4,14 @@ struct Ts
 {
 
 };
-//ÏÖ´úC±àÒëÆ÷ÔÊÐí¿Õ½á¹¹Ìå µ«ÎÞÒâÒå
+//çŽ°ä»£Cç¼–è¯‘å™¨å…è®¸ç©ºç»“æž„ä½“ ä½†æ— æ„ä¹‰
 
 struct SoftArray{
     int len;
     int array[];
-    //sturctµÄ×îºóÒ»¸öÔªËØ¿ÉÒÔÊÇÎ´Öª´óÐ¡µÄÊý×é
+    //sturctçš„æœ€åŽä¸€ä¸ªå…ƒç´ å¯ä»¥æ˜¯æœªçŸ¥å¤§å°çš„æ•°ç»„
 };
-//ÀûÓÃstruct¶¨ÒåÈáÐÔÊý×é
+//åˆ©ç”¨structå®šä¹‰æŸ”æ€§æ•°ç»„
 
 
 struct SoftArray* CreatSoftAarray(int i){
@@ -19,11 +19,11 @@ struct SoftArray* CreatSoftAarray(int i){
     if(i>0){
         ret=(struct SoftArray*)malloc(sizeof(struct SoftArray)+sizeof(int)*i);
         ret->len=i;
-        //ËäÈ»malloc()º¯ÊýµÄÀàÐÍÊÇ(void *),ÈÎºÎÀàÐÍµÄÖ¸Õë¶¼¿ÉÒÔ×ª»»³É(void *),µ«ÊÇ×îºÃ»¹ÊÇÔÚÇ°Ãæ½øÐÐÇ¿ÖÆÀàÐÍ×ª»»¡£
+        //è™½ç„¶malloc()å‡½æ•°çš„ç±»åž‹æ˜¯(void *),ä»»ä½•ç±»åž‹çš„æŒ‡é’ˆéƒ½å¯ä»¥è½¬æ¢æˆ(void *),ä½†æ˜¯æœ€å¥½è¿˜æ˜¯åœ¨å‰é¢è¿›è¡Œå¼ºåˆ¶ç±»åž‹è½¬æ¢ã€‚
     }
     return ret;
 }
-//³õÊ¼»¯ÈáÐÔÊý×é
+//åˆå§‹åŒ–æŸ”æ€§æ•°ç»„
 
 int main()
 {
@@ -32,7 +32,7 @@ int main()
 
     for(int i=0;i<sa->len;i++){
         sa->array[i]=i+1;
-    }//len´øÓÐÊý×éµÄ³¤¶ÈÐÅÏ¢
+    }//lenå¸¦æœ‰æ•°ç»„çš„é•¿åº¦ä¿¡æ¯
 
     for(int i=0;i<sa->len;i++){
         printf("%d\n",sa->array[i]);

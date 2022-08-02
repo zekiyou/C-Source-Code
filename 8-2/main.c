@@ -10,7 +10,7 @@ void f2(void){
 
 void MemSet(void* src, int length, unsigned char n){
     unsigned char* p=(unsigned char*)src;
-    //void*Ö¸Õë×÷ÎªÓÒÖµÊ¹ÓÃĞèÒª½øĞĞÇ¿ÖÆÀàĞÍ×ª»»
+    //void*æŒ‡é’ˆä½œä¸ºå³å€¼ä½¿ç”¨éœ€è¦è¿›è¡Œå¼ºåˆ¶ç±»å‹è½¬æ¢
     for(int i=0;i<length;i++){
         p[i]=n;
     }
@@ -19,13 +19,13 @@ void MemSet(void* src, int length, unsigned char n){
 int main()
 {
     f1(1,2,3,4,5);
-    //Ä¬ÈÏ½ÓÊÜÈÎÒâ²ÎÊı ·µ»ØÖµÀàĞÍÎªint
+    //é»˜è®¤æ¥å—ä»»æ„å‚æ•° è¿”å›å€¼ç±»å‹ä¸ºint
     f2();
-    //void ±íÊ¾ÎŞ²ÎÊı ÎŞ·µ»ØÖµ
+    //void è¡¨ç¤ºæ— å‚æ•° æ— è¿”å›å€¼
     //void a;
-    //²»´æÔÚvoidÀàĞÍ±äÁ¿ error
+    //ä¸å­˜åœ¨voidç±»å‹å˜é‡ error
     void *p;
-    //´æÔÚvoid* ÀàĞÍÖ¸Õë
+    //å­˜åœ¨void* ç±»å‹æŒ‡é’ˆ
 
     int a[5];
     char b[10];

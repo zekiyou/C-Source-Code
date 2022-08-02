@@ -9,15 +9,15 @@ int main()
     int* p=&i;
     *p=7;
     printf("%d\n",i);
-    //constÐÞÊÎµÄ±äÁ¿²»ÊÇÕæÕýµÄ³£Á¿
-    //Ö»ÊÇ¸æËß±àÒëÆ÷¸Ä±äÁ¿²»ÄÜ³öÏÖÔÚµÈºÅ×ó±ß
+    //constä¿®é¥°çš„å˜é‡ä¸æ˜¯çœŸæ­£çš„å¸¸é‡
+    //åªæ˜¯å‘Šè¯‰ç¼–è¯‘å™¨æ”¹å˜é‡ä¸èƒ½å‡ºçŽ°åœ¨ç­‰å·å·¦è¾¹
 
     printf("%d\n",b);
     p=&b;
     //*p=7;
     printf("%d\n",b);
-    //wingwµÈ±ê×¼±àÒëÆ÷²»¶ÔconstµÄÈ«¾ÖÉúÃüÖÜÆÚ½øÐÐÓÅ»¯
-    //gccµÈÏÖ´ú±àÒëÆ÷½«Æä·ÅÈëÖ»¶Á´æ´¢Çø×öµ½²»¿É¸Ä±ä
+    //wingwç­‰æ ‡å‡†ç¼–è¯‘å™¨ä¸å¯¹constçš„å…¨å±€ç”Ÿå‘½å‘¨æœŸè¿›è¡Œä¼˜åŒ–
+    //gccç­‰çŽ°ä»£ç¼–è¯‘å™¨å°†å…¶æ”¾å…¥åªè¯»å­˜å‚¨åŒºåšåˆ°ä¸å¯æ”¹å˜
 	
     return 0;
 }

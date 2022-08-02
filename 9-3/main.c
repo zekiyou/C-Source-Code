@@ -3,8 +3,8 @@
 int main()
 {
     volatile int a;
-    //volatile ×÷Îª±àÒëÆ÷¾¯¸æ×Ö ·ÀÖ¹±àÒëÆ÷¶Ôa½øÐÐÓÅ»¯
-    //ÈÃa±äÁ¿Ã¿´ÎÊ¹ÓÃ ¶¼ÔÚÄÚ´æÖÐÈ¡Öµ ÊÊÓÃÓÚ¶àÏß³Ì³ÌÐò
+    //volatile ä½œä¸ºç¼–è¯‘å™¨è­¦å‘Šå­— é˜²æ­¢ç¼–è¯‘å™¨å¯¹aè¿›è¡Œä¼˜åŒ–
+    //è®©aå˜é‡æ¯æ¬¡ä½¿ç”¨ éƒ½åœ¨å†…å­˜ä¸­å–å€¼ é€‚ç”¨äºŽå¤šçº¿ç¨‹ç¨‹åº
 
     printf("Hello World!\n");
     return 0;

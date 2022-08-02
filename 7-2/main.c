@@ -8,7 +8,7 @@ void f1(int n){
         printf("%d\n",i);
     }
 }
-//break ±íÊ¾ ÖÕÖ¹Ñ­»·µÄÖ´ĞĞ
+//break è¡¨ç¤º ç»ˆæ­¢å¾ªç¯çš„æ‰§è¡Œ
 
 void f2(int n){
     for(int i=1;i<=n;i++)
@@ -18,7 +18,7 @@ void f2(int n){
         printf("%d\n",i);
     }
 }
-//continue ±íÊ¾ ÖÕÖ¹±¾´ÎÑ­»· ½øÈëÏÂ´ÎÑ­»·
+//continue è¡¨ç¤º ç»ˆæ­¢æœ¬æ¬¡å¾ªç¯ è¿›å…¥ä¸‹æ¬¡å¾ªç¯
 
 int main()
 {
