@@ -2,13 +2,13 @@
 
 #define C -1
 
-#if C==-1
+#if C == 0
     #error C value is error.
-    //#errorÓÃÓÚ³ÌÐòÔ±×Ô¶¨ÒåÒ»¸ö±àÒë´íÎóÐÅÏ¢ À´¿ØÖÆ±àÒë ²úÉú´íÎóÐÅÏ¢Ôò±àÒëÊ§°Ü
+    //#errorç”¨äºŽç¨‹åºå‘˜è‡ªå®šä¹‰ä¸€ä¸ªç¼–è¯‘é”™è¯¯ä¿¡æ¯ æ¥æŽ§åˆ¶ç¼–è¯‘ äº§ç”Ÿé”™è¯¯ä¿¡æ¯åˆ™ç¼–è¯‘å¤±è´¥
 #endif
 #ifndef C
     #warning C value is not defined.
-    //#warningÓÃÓÚ³ÌÐòÔ±×Ô¶¨ÒåÒ»¸ö±àÒë¾¯¸æÐÅÏ¢ ²úÉú¾¯¸æÒÀÈ»²úÉú¿ÉÖ´ÐÐ³ÌÐò
+    //#warningç”¨äºŽç¨‹åºå‘˜è‡ªå®šä¹‰ä¸€ä¸ªç¼–è¯‘è­¦å‘Šä¿¡æ¯ äº§ç”Ÿè­¦å‘Šä¾ç„¶äº§ç”Ÿå¯æ‰§è¡Œç¨‹åº
 #endif
 
 int main()
