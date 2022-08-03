@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#define C -1
-
 #if C == 0
     #error C value is error.
     //#error用于程序员自定义一个编译错误信息 来控制编译 产生错误信息则编译失败
