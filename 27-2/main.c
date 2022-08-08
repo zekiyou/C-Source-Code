@@ -5,21 +5,21 @@ int main()
     int a[10]={1};
     int* p;
     p=a;
-    //Êý×éÃû´ó¶àÊýÊ±ºò·½±ãÀí½â¿ÉÒÔµ±×ö³£Á¿Ö¸ÕëÀ´²Ù×÷
+    //æ•°ç»„åå¤§å¤šæ•°æ—¶å€™æ–¹ä¾¿ç†è§£å¯ä»¥å½“åšå¸¸é‡æŒ‡é’ˆæ¥æ“ä½œ
     printf("p=%p\n",p);
     printf("a=%p\n",a);
 
     printf("a[0]=%d\n",*a);
     printf("a[1]=%d\n",*(a+1));
 
-    //³ýÁËÔÚ&ºÍsizeofÊ±²»ÄÜµ±×ö³£Á¿Ö¸Õë
+    //é™¤äº†åœ¨&å’Œsizeofæ—¶ä¸èƒ½å½“åšå¸¸é‡æŒ‡é’ˆ
     printf("&p=%p\n",&p);
     printf("&a=%p\n",&a);
-    //&Ê±£¬&pÊÇÖ¸Õë±¾ÉíµÄµØÖ·£¬&aÊÇÊý×éµÄµØÖ·
+    //&æ—¶ï¼Œ&pæ˜¯æŒ‡é’ˆæœ¬èº«çš„åœ°å€ï¼Œ&aæ˜¯æ•°ç»„çš„åœ°å€
 
     printf("sizeof(p)=%d\n",sizeof(p));
     printf("sizeof(a)=%d\n",sizeof(a));
-    //sizeofÊ±£¬sizeof(p)ÊÇÖ¸ÕëpµÄÄÚ´æ´óÐ¡£¨4£©£¬sizeof(a)ÊÇÊý×éaµÄÄÚ´æ´óÐ¡£¨40£©
+    //sizeofæ—¶ï¼Œsizeof(p)æ˜¯æŒ‡é’ˆpçš„å†…å­˜å¤§å°ï¼ˆ4ï¼‰ï¼Œsizeof(a)æ˜¯æ•°ç»„açš„å†…å­˜å¤§å°ï¼ˆ40ï¼‰
 
 
     return 0;

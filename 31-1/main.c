@@ -8,21 +8,21 @@ int main()
 
     snprintf(buf,sizeof(buf),str,"Test");
     printf("%s\n",buf);
-    //snprintf��ʹ�ã������и�ʽ����Ϣ������Ҫ���ϵ��ĸ�����
+    //snprintf的使用，若含有格式化信息，则需要加上第四个参数
 
     if("abc"=="abc"){
         printf("Equal\n");
     }else
         printf("UnEqual\n");
-    //gcc�Ż�����Equal��bcc���Ż���Ϊ�����ַ�����ַ��ͬ UnEqual
+    //gcc优化后是Equal，bcc不优化认为两个字符串地址不同 UnEqual
 
     if(strcmp("abc","abc")==0){
         printf("Equal\n");
     }else
         printf("UnEqual\n");
 
-    //strcmp�����Ƚϵ��ַ��������� Equal
-    //�ַ����Ƚ�Ҫʹ��strcmp
+    //strcmp函数比较的字符串的内容 Equal
+    //字符串比较要使用strcmp
 
 
 
