@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <malloc.h>
-
+#include <stdlib.h>
 
 int*** malloc3d(int length, int width, int height){
 
