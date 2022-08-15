@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
 #include <string.h>
 struct Student
 {
@@ -15,15 +15,15 @@ char* func(){
 int main()
 {
     struct Student s1;
-    //s1.name¾Ö²¿Ö¸Õë±äÁ¿Ã»ÓĞ³õÊ¼»¯Ò°Ö¸Õë
+    //s1.nameå±€éƒ¨æŒ‡é’ˆå˜é‡æ²¡æœ‰åˆå§‹åŒ–é‡æŒ‡é’ˆ
     char* p=func();
     
-    //º¯Êı·µ»Ø¾Ö²¿µÄµØÖ·£¬Ò°Ö¸Õë
+    //å‡½æ•°è¿”å›å±€éƒ¨çš„åœ°å€ï¼Œé‡æŒ‡é’ˆ
 
     p=(char*)malloc(sizeof(char)*5);
 
     strcpy(p,"STRCPYANDSNPRINTF");
-    //ÄÚ´æ²Ù×÷µ«Ã»ÓĞ³¤¶ÈĞÅÏ¢£¬ÄÚ´æ²Ù×÷Ô½½ç£¬Ò°Ö¸Õë
-    //¸Ä³Ésnprintf
+    //å†…å­˜æ“ä½œä½†æ²¡æœ‰é•¿åº¦ä¿¡æ¯ï¼Œå†…å­˜æ“ä½œè¶Šç•Œï¼Œé‡æŒ‡é’ˆ
+    //æ”¹æˆsnprintf
     return 0;
 }

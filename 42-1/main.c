@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -8,17 +8,17 @@ int main()
 
     if(!p){
 
-    }//�ڴ����ϰ��1:���malloc�Ƿ�����ɹ�
+    }//内存操作习惯1:检查malloc是否申请成功
 
     free(p);
     p=NULL;
-    //free��������ֵNULL����Ұָ��
+    //free后立马赋值NULL避免野指针
 
     int* p2=(int*)malloc(sizeof(int)*4);
-    //��֤malloc��freeһ��һƥ��
-    //malloc����free�ڴ�й©
+    //保证malloc与free一对一匹配
+    //malloc多于free内存泄漏
 
-    //free����malloc ����Ұָ�� �������
+    //free多于malloc 操作野指针 程序崩溃
 
     return 0;
 }
