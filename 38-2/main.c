@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
 
 #define SIZE 3
 
@@ -11,17 +11,17 @@ void f(int* p){
 int main()
 {
     int* p=malloc(SIZE*sizeof(int));
-    //malloc�Ĳ���Ϊ�ֽڴ�С���ڴ治����ʼ��Ϊ���ֵ
+    //malloc的参数为字节大小，内存不出初始化为随机值
 
     f(p);
 
 
     int* p2=calloc(SIZE,sizeof(int));
-    //calloc����Ϊnum��size���ڴ��ʼ��Ϊ0
+    //calloc参数为num和size，内存初始化为0
     f(p2);
 
     int* p3=realloc(p,sizeof(int)*2*SIZE);
-    //realloc�����ڴ�ռ��С
+    //realloc重置内存空间大小
 
 
 

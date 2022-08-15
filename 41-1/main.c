@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
 
 int* f(){
     int b=5;
@@ -9,23 +9,23 @@ int* f(){
 int main()
 {
     int* p=123456;
-    //���������ת����pָ��ָ����Ч��ַ
+    //错误的类型转换，p指针指向无效地址
 
     int* p2;
-    //�ֲ�ָ�����û�г�ʼ����p2ָ����Ч��ַ
+    //局部指针变量没有初始化，p2指向无效地址
 
     int* p3=(int*)malloc(sizeof(int));
     free(p3);
-    //ʹ�����Ѿ��ͷŵ�ָ�룬p3ָ����Ч��ַ
+    //使用了已经释放的指针，p3指向无效地址
 
     int a=3;
     int* p4=&a;
 
     p4=p4+5;
-    //�����ָ�����㣬p4ָ����Ч��ַ������Խ��
+    //错误的指针运算，p4指向无效地址，操作越界
 
     int* p5=f();
-    //���ؾֲ������ĵ�ַ��f�����ľֲ������Ŀռ��ڷ��غ�����
+    //返回局部变量的地址，f函数的局部变量的空间在返回后被销毁
 
 
     printf("%d\n",*p2);

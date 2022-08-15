@@ -1,7 +1,7 @@
 #ifndef MLEAK_H
 #define MLEAK_H
 
-#include <malloc.h>
+#include <stdlib.h>
 
 #define MALLOC(n) mallocEx(n, __FILE__, __LINE__)
 #define FREE(p) freeEx(p)
@@ -11,7 +11,7 @@ void freeEx(void* p);
 void PRINT_LEAK_INFO();
 #define SIZE 256
 
-/* ¶¯Ì¬ÄÚ´æÉêÇë²ÎÊı½á¹¹Ìå */
+/* åŠ¨æ€å†…å­˜ç”³è¯·å‚æ•°ç»“æ„ä½“ */
 typedef struct
 {
     void* pointer;
@@ -20,20 +20,20 @@ typedef struct
     int line;
 } MItem;
 
-static MItem g_record[SIZE]; /* ¼ÇÂ¼¶¯Ì¬ÄÚ´æÉêÇëµÄ²Ù×÷ */
+static MItem g_record[SIZE]; /* è®°å½•åŠ¨æ€å†…å­˜ç”³è¯·çš„æ“ä½œ */
 
 void* mallocEx(size_t n, const char* file, const line)
 {
-    void* ret = malloc(n); /* ¶¯Ì¬ÄÚ´æÉêÇë */
+    void* ret = malloc(n); /* åŠ¨æ€å†…å­˜ç”³è¯· */
 
     if( ret != NULL )
     {
         int i = 0;
 
-        /* ±éÀúÈ«¾ÖÊı×é£¬¼ÇÂ¼´Ë´Î²Ù×÷ */
+        /* éå†å…¨å±€æ•°ç»„ï¼Œè®°å½•æ­¤æ¬¡æ“ä½œ */
         for(i=0; i<SIZE; i++)
         {
-            /* ²éÕÒÎ»ÖÃ */
+            /* æŸ¥æ‰¾ä½ç½® */
             if( g_record[i].pointer == NULL )
             {
                 g_record[i].pointer = ret;
@@ -54,7 +54,7 @@ void freeEx(void* p)
     {
         int i = 0;
 
-        /* ±éÀúÈ«¾ÖÊı×é£¬ÊÍ·ÅÄÚ´æ¿Õ¼ä£¬²¢Çå³ı²Ù×÷¼ÇÂ¼ */
+        /* éå†å…¨å±€æ•°ç»„ï¼Œé‡Šæ”¾å†…å­˜ç©ºé—´ï¼Œå¹¶æ¸…é™¤æ“ä½œè®°å½• */
         for(i=0; i<SIZE; i++)
         {
             if( g_record[i].pointer == p )
@@ -78,7 +78,7 @@ void PRINT_LEAK_INFO()
 
     printf("Potential Memory Leak Info:\n");
 
-    /* ±éÀúÈ«¾ÖÊı×é£¬´òÓ¡Î´ÊÍ·ÅµÄ¿Õ¼ä¼ÇÂ¼ */
+    /* éå†å…¨å±€æ•°ç»„ï¼Œæ‰“å°æœªé‡Šæ”¾çš„ç©ºé—´è®°å½• */
     for(i=0; i<SIZE; i++)
     {
         if( g_record[i].pointer != NULL )
