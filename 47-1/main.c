@@ -7,22 +7,22 @@ int str(char* p){
     if(*p!='\0')
         return str(p+1)+1;
 
-   //���ģ����ֽ��С��ģ���� ��p�ĳ���ֻ��Ҫ��p+1�Ӵ��ĳ����ټ�1
+   //大规模问题分解成小规模问题 求p的长度只需要求p+1子串的长度再加1
 
 }
-//strlen�ĵݹ�
+//strlen的递归
 
 int fac(int n){
 
     if(n>=3){
         return fac(n-1)+fac(n-2);
     }
-    //������ֽ����ͬ��С��ģ����
+    //大问题分解成相同的小规模问题
     if(n==2||n==1)
         return 1;
-    //�߽��������� �ݹ����
+    //边界条件满足 递归结束
 }
-//쳲��������� �ݹ�
+//斐波那契数列 递归
 
 int main()
 {

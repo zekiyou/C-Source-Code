@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int f(int a,int b);
-//fµÄÉùÃ÷
+//fçš„å£°æ˜
 
 int main()
 {
     extern int a;
-    //aµÄÉùÃ÷
+    //açš„å£°æ˜
     printf("%d",a);
     return 0;
 }
